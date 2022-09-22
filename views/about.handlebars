@@ -1,0 +1,20 @@
+<section class="about">
+    <h1 class="abh1">About</h1>
+    <div class="emp-container">
+    {{#each employee}}
+    <div class="employee-container">
+        <div class="employee-image">
+            <img src="{{image}}" alt="employee image" class="emp-img">
+        </div>
+        <div class="employee-info">
+            <ul>
+                <li class="emp-name">{{name}}</li>
+                <li class="emp-info">{{info}}</li>
+            </ul>
+        </div>
+    </div>
+    {{else}}
+    <p class="error">No Employees found</p>
+    {{/each}}
+    </div>
+</section>

@@ -1,0 +1,16 @@
+<section class="i-details">
+    <div class="i-container">
+        {{#if item.stock}}
+        <div class="i-img"><img class="img-img" src="../{{item.image}}" alt="Product Image"></div>
+        <div class="i-info">
+            <div class="i-name"><b>Name:</b> &nbsp;&nbsp;{{item.name}}</div>
+            <div class="i-price"><b>Price:</b> &nbsp;&nbsp;{{item.price}}&euro;</div>
+            <div class="i-stock"><b>In Stock:</b> &nbsp;{{item.stock}}</div>
+            <div class="i-description"><b>Description:</b> <br>{{item.description}}</div>
+            <div class="i-buy"><form action="/items/buy/{{item.id}}" method="GET"><button class="i-b-buy">Buy Now!</button></form></div>
+        </div>
+        {{else}}
+        <p>Item is no longer available, please return later</p>
+        {{/if}}
+    </div>
+</section>

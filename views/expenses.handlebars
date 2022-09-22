@@ -1,0 +1,30 @@
+<section class="expenses">
+    {{#if expenses}}
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Purchase Id</th>
+      <th scope="col">Item Name</th>
+      <th scope="col">Item Id</th>
+      <th scope="col">Date</th>
+      <th scope="col">Amount</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each expenses}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{itemName}}</td>
+      <td>{{itemId}}</td>
+      <td>{{createdAt}}</td>
+      <td>{{amount}}</td>
+      <td><form action="/connect/delete_expenses/{{id}}/{{user}}" method="POST"><button class="delete_exp">Delete</button></form></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{else}}
+<p class="n_p">No purchases have been made by this user</p>
+{{/if}}
+</section>

@@ -1,0 +1,77 @@
+.about {
+    margin: 0;
+    padding-top: 1vh;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.4)), url(/images/about-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1.abh1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+p.error {
+    color: white;
+}
+
+.employee-container {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    text-align: left;
+    justify-content: center;
+    height: 300px;
+    width: 95%;
+    border-radius: 50px;
+}
+
+.employee-image {
+    float: left;
+    width: 20%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.emp-img {
+    width: 80%;
+    height: 85%;
+    border-radius: 50px;
+    padding: 20px;
+    color:aliceblue;
+}
+
+.employee-info{
+    background-color: rgba(184, 72, 72, 0.7);
+    float: left;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.employee-info li{
+    font-size: 20px;
+    color: white;
+    list-style: none;
+}
+
+.emp-name {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.emp-container {
+    overflow-y: scroll;
+    max-height: 80vh;
+    max-width: 100%;
+}

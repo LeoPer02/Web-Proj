@@ -1,0 +1,22 @@
+
+
+.login-sec{
+    height: 90vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.4)), url(/images/login-background.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+.no_account {
+    color:red;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.Erros {
+    text-align: left;
+}

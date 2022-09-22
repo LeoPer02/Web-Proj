@@ -1,0 +1,13 @@
+
+
+.n_p{
+    margin-top: 20vh;
+    text-align: center;
+    color: red;
+}
+
+.delete_exp {
+    background-color: transparent;
+    border: none;
+    text-decoration:underline;
+}

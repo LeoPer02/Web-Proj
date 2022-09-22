@@ -1,0 +1,31 @@
+<section class="search">
+    <h1>Search Items</h1>
+    <div class="input-container">
+       <div class="search-box"> 
+            <form action="/items/search" method="GET">
+                <input name="item_name" class="search-input" type="text" placeholder="Book, Chair, Dress ..."/>
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="item-container">
+        {{#each items}}
+        {{#if stock}}
+        <div class="item-frame">
+            <div class="item-image-div">
+                <form  class="img-f" action="/items/{{id}}" method="GET"><button class="img-b" type="submit"><img class="item-image" src="../{{image}}" alt="<<Imagem do Produto>>"></button></form>
+            </div>
+            <div class="item-details">
+                <ul>
+                    <li>Name: {{name}}</li>
+                    <li>Price: {{price}}€</li>
+                    <li class="desc">Description: {{description}}<li>
+                </ul>
+            </div>
+        </div>
+        {{/if}}
+        {{else}}
+        <p class="error">No itens found</p>
+        {{/each}}
+    </div>
+</section>
